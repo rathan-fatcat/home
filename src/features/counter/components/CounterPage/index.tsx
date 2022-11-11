@@ -29,7 +29,7 @@ const CounterPage = () => {
               rel="noopener noreferrer"
             >
               React,
-            </a>{' '}
+            </a>
             <a
               className={styles.link}
               href="https://redux.js.org/"
@@ -37,7 +37,7 @@ const CounterPage = () => {
               rel="noopener noreferrer"
             >
               Redux,
-            </a>{' '}
+            </a>
             <a
               className={styles.link}
               href="https://react-redux.js.org/"
@@ -48,11 +48,7 @@ const CounterPage = () => {
             </a>
           </span>
         </h3>
-        <Link href={'https://nextjs.org/#features'}>
-          <a className={styles.link} target={'_blank'}>
-            Why use Next.js →
-          </a>
-        </Link>
+        <Link href={'https://nextjs.org/#features'}>Why use Next.js →</Link>
 
         <Counter />
       </div>

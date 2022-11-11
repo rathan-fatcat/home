@@ -1,9 +1,15 @@
 import { NextPageWithLayout } from 'features/layouts';
 import withDefaultLayout from 'features/layouts/components/DefaultLayout';
-import CounterPage from './components/CounterPage';
+import NavBar from 'features/layouts/NavBar';
+import SideBar from 'features/layouts/SideBar';
 
 const CounterContainer: NextPageWithLayout = (props) => {
-  return <CounterPage />;
+  return (
+    <div className="flex flex-col">
+      <NavBar />
+      <SideBar />
+    </div>
+  );
 };
 
 export default withDefaultLayout(CounterContainer);

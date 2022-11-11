@@ -1,0 +1,31 @@
+.side_bar {
+  height: 90vh;
+  width: 15%;
+  position: relative;
+}
+
+.sidebar_item {
+  background-color: #3d65f4;
+  padding-left: 8px;
+}
+.open_btn {
+  display: flex;
+}
+
+@media screen and (orientation: portrait), (max-width: 767px) {
+  .side_bar {
+    display: none;
+  }
+  .sidebar_item {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .sidebar_text {
+    display: none;
+  }
+
+  .open_btn {
+    display: flex;
+  }
+}
