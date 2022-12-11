@@ -1,31 +1,28 @@
-.side_bar {
-  height: 90vh;
-  width: 15%;
+.side-bar {
+  min-height: 87vh;
+  max-height: 100%;
+  width: 16vw;
   position: relative;
 }
 
-.sidebar_item {
+.sidebar-item {
   background-color: #3d65f4;
   padding-left: 8px;
 }
-.open_btn {
+.open-btn {
   display: flex;
 }
 
 @media screen and (orientation: portrait), (max-width: 767px) {
-  .side_bar {
+  .side-bar {
     display: none;
   }
-  .sidebar_item {
+  .sidebar-item {
     display: flex;
     justify-content: center;
     padding-left: 0;
   }
-  .sidebar_text {
+  .sidebar-text {
     display: none;
-  }
-
-  .open_btn {
-    display: flex;
   }
 }

@@ -1,15 +1,11 @@
-.fatcat_title {
+.fatcat-title {
   color: #182b68;
   font-size: 26px;
   font-weight: bold;
   padding-left: 4px;
 }
 
-.nav_bar {
-  height: 10vh;
-}
-
-.input_el {
+.input-el {
   background-color: transparent;
   border: none;
   outline: none;
@@ -18,7 +14,7 @@
   font-size: 15px;
 }
 
-.input_el_container {
+.input-el-container {
   border: solid 1px;
   border-radius: 40px;
   background-color: #f3f4f8;
@@ -30,7 +26,7 @@
   margin-right: 20px;
 }
 
-.dropdown:hover .dropdown_menu {
+.dropdown:hover .dropdown-menu {
   display: none;
 }
 
@@ -43,7 +39,7 @@
   width: 35px;
 }
 
-.arr_alignment {
+.arr-alignment {
   margin-right: auto;
 }
 
@@ -52,16 +48,16 @@
     width: 30px;
   }
 
-  .fatcat_title {
+  .fatcat-title {
     font-size: 22px;
     padding-left: 2px;
   }
 
-  .input_el_container {
+  .input-el-container {
     display: none;
   }
 
-  .tab_bar {
+  .tab-bar {
     display: none;
   }
 
@@ -79,7 +75,7 @@
     width: 25px;
   }
 
-  .dropdown:hover .dropdown_menu {
+  .dropdown:hover .dropdown-menu {
     display: block;
     right: 0px;
     margin-top: 18px;
@@ -91,7 +87,7 @@
     margin-right: 10px;
   }
 
-  .arr_alignment {
+  .arr-alignment {
     margin: auto;
   }
 }

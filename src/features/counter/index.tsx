@@ -1,15 +1,11 @@
 import { NextPageWithLayout } from 'features/layouts';
 import withDefaultLayout from 'features/layouts/components/DefaultLayout';
 import NavBar from 'features/layouts/NavBar';
-import SideBar from 'features/layouts/SideBar';
+import Home from 'features/Common/components/Home';
+import styles from './index.module.css';
 
 const CounterContainer: NextPageWithLayout = (props) => {
-  return (
-    <div className="flex flex-col">
-      <NavBar />
-      <SideBar />
-    </div>
-  );
+  return;
 };
 
 export default withDefaultLayout(CounterContainer);

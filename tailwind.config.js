@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
+  darkMode: 'class',
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/features/**/*.{js,ts,jsx,tsx}",
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/features/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -11,14 +11,14 @@ module.exports = {
         transparent: 'transparent',
       },
       fontFamily: {
-        'Lato-Regular': ['Lato-Regular', 'Helvetica,Arial', 'sans-serif']
-      }
+        'Lato-Regular': ['Lato-Bold', 'Helvetica,Arial', 'sans-serif'],
+        'Lato-normal': ['Lato-Bold', 'Helvetica,Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/typography"),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
   ],
-}
-
+};

@@ -1,12 +1,14 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './index.module.css';
 
 const NavBar = () => {
   return (
     <nav
-      className={`${styles.nav_bar}
-  relative
-  w-screen h-20  
+      className="
+      bg-[#FFFFFF] z-[1]
+  fixed
+  w-full h-20
   flex
   shadow-md
   items-center
@@ -14,8 +16,7 @@ const NavBar = () => {
   text-gray-500
   hover:text-gray-700
   focus:text-gray-700
-  navbar navbar-expand-lg navbar-light
-  `}
+  navbar navbar-expand-lg navbar-light"
     >
       <div className="absolute container-fluid w-full flex flex-wrap items-center justify-between">
         <button
@@ -34,39 +35,33 @@ const NavBar = () => {
             height={40}
             alt="logo"
           />
-          <span className={styles.fatcat_title}>Fatcat</span>
+          <span className={styles['fatcat-title']}>Fatcat</span>
         </button>
 
         <ul
-          className={`${styles.tab_bar} flex bg-[#ECF0FF] rounded-3xl h-10 px-5 ml-24 text-black font-semibold list-style-none mr-auto`}
+          className={`${styles['tab-bar']} flex bg-[#ECF0FF] rounded-3xl h-10 px-5 ml-24 text-black font-semibold list-style-none mr-auto`}
         >
-          <li className="p-2">
-            <a
-              className="nav-link hover:text-gray-700 focus:text-blue-700 p-0"
-              href="#"
-            >
-              Dashboard
-            </a>
-          </li>
-          <li className="p-2">
-            <a
-              className="nav-link hover:text-gray-700 focus:text-blue-700 p-0"
-              href="#"
-            >
-              Team
-            </a>
-          </li>
-          <li className="p-2">
-            <a
-              className="nav-link hover:text-gray-700 focus:text-blue-700 p-0"
-              href="#"
-            >
-              Projects
-            </a>
-          </li>
+          <Link
+            href="/"
+            className="p-2 nav-link hover:text-gray-700 focus:text-blue-700"
+          >
+            Dashboard
+          </Link>
+          <Link
+            href="/analytics"
+            className="p-2 nav-link hover:text-gray-700 focus:text-blue-700"
+          >
+            Analytics
+          </Link>
+          <Link
+            href="/info"
+            className="p-2 nav-link hover:text-gray-700 focus:text-blue-700"
+          >
+            Info
+          </Link>
         </ul>
 
-        <span className={`${styles.arr_alignment} flex`}>
+        <span className={`${styles['arr-alignment']} flex`}>
           <Image
             className={styles.arrows}
             src="/homepage/leftarrow.svg"
@@ -84,7 +79,7 @@ const NavBar = () => {
         </span>
 
         <div className="flex items-center relative">
-          <form className={styles.input_el_container}>
+          <form className={styles['input-el-container']}>
             <Image
               src="/homepage/search.svg"
               width={20}
@@ -93,7 +88,7 @@ const NavBar = () => {
             />
             <input
               placeholder="Search for students, teachers, etc."
-              className={styles.input_el}
+              className={styles['input-el']}
               type="search"
             />
           </form>
@@ -145,7 +140,7 @@ const NavBar = () => {
               alt="profile"
             />
             <ul
-              className={`${styles.dropdown_menu} bg-[#ECF0FF] font-semibold absolute hidden text-gray-700 pt-1`}
+              className={`${styles['dropdown-menu']} bg-[#ECF0FF] font-semibold absolute hidden text-gray-700 pt-1`}
             >
               <li className="">
                 <a
